@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ "$#" -ne 2 ]; then
+	echo "ERROR: Illegal number of parameters."
+	echo "USAGE: lc file1 file2"
+	echo "DESCRIPTION: lc will read from file1 and print all contents to file two as lower case."
+fi
+	lcmain < $1 > $2
